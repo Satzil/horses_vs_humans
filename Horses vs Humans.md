@@ -1,4 +1,4 @@
-
+﻿
 # Horses vs Humans Classification using Convolutional Neural Networks
 
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/horses_and_humas.png?raw=true)
