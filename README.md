@@ -115,9 +115,9 @@ The model is trained on augmented data to address overfitting and increase accur
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/accuracy_with_augmentation.png?raw=true)
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/loss_with_augmentation.png?raw=true)
 
-From the results, it is very clear that the image augmentation didn't help the model to address the issue of overfitting and it resulted in an increase of noise in the accuracy and loss validation sets.
+From the results, it is very clear that the image augmentation didn't help the model to address the issue of overfitting and it resulted in an increase of noise in the accuracy and loss of validation sets.
 
-It is because the image augmentation is not suitable for every dataset and it may even result in worse accuracy. To check the performance of augmentation on the other dataset, the cats vs. dogs dataset is used. The same model was used to train the model on the cats vs. dogs dataset with augmentation.
+It is because the image augmentation is not suitable for every dataset and it may even result in worse accuracy. To check the performance of augmentation on the other dataset, the cats vs. dogs dataset is used. The same model was used to train on the cats vs. dogs dataset with augmentation.
 
 > Accuracy of cats vs. dogs dataset with augmentation
 
@@ -127,6 +127,7 @@ It is because the image augmentation is not suitable for every dataset and it ma
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/catsvsdogs_loss.png?raw=true)
 
 From the above graph, it is clear that the accuracy of the validation set is steadily increasing and it has addressed the issue of overfitting. Augmentation seemed to work well for the cats vs. dogs rather than horses vs. humans dataset.
+
 It is to be well noted that the parameters for the augmentation have to be experimented with to obtain better results.
 
 ## Transfer Learning using Inception_v3 Model
@@ -149,7 +150,7 @@ The convolutional layers from the Inception_v3 are taken with already trained pa
 
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/inceptionv3_summary.png?raw=true)
 
-It can be observed that there are non-trainable parameters because the inception_v3 model has already been trained over a large dataset and those trained parameters from convolution layers are taken as reference and the custom model is made. The trainable parameters are those from dense layers which are newly added.
+It is observed that there are non-trainable parameters because the inception_v3 model has already been trained over a large dataset and those trained parameters from convolution layers are taken as reference and the custom model is made. The trainable parameters are those from dense layers which are newly added.
 
 ## Analysis of Inception_v3 model
 
