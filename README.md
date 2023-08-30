@@ -71,6 +71,7 @@ The model is trained under the given dataset for 100 epoch. At each epoch the mo
 
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/accuracy_without_augmentation.png?raw=true)
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/loss_without_augmentation.png?raw=true)
+
 It clearly specifies that the model is overfitted since there is no increase in validation accuracy for longer iterations.
 
 The accuracy of the model is approximated to be 84% accurate.
@@ -113,7 +114,8 @@ The model is trained on augmented data to address overfitting and increase accur
 
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/accuracy_with_augmentation.png?raw=true)
 ![enter image description here](https://github.com/Satzil/horses_vs_humans/blob/main/images/loss_with_augmentation.png?raw=true)
-From the results it very clear that the image augmentation didn't help the model to address the issue of overfitting and it resulted in increase of noise in the accuracy and loss validation sets.
+
+From the results it is very clear that the image augmentation didn't help the model to address the issue of overfitting and it resulted in increase of noise in the accuracy and loss validation sets.
 
 It is due to the fact that the image augmentation is not suitable for every dataset and it may even result in worst accuracy. To check the performance of augmentation on the other dataset, the cats vs dogs dataset is used. Same model was used to train the model on cats vs dogs dataset with augmentation.
 
